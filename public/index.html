@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Mini Projet Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="translation.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo" data-i18n="greeting">Akram <span data-i18n="greeting">Jallab</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active" data-i18n="home">Home</a>
+            <a href="#education" data-i18n="education">Education</a>
+            <a href="#skills" data-i18n="skills">Skills</a>
+            <a href="#contact" data-i18n="contact">Contact</a>
+        </nav>
+        <div class="translation-buttons">
+            <button id="english-btn" class="btn" data-i18n="english">English</button>
+            <button id="french-btn" class="btn" data-i18n="french">Français</button>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 data-i18n="greeting">Hi, it's <span>Akram</span></h1>
+            <h3 class="text-animation" data-i18n="text_animation">I'm a <span></span></h3>
+            <p data-i18n="description">Welcome to my digital playground!
+                I'm a second-year software engineering student fueled by a passion for coding and problem-solving. 
+                With every line of code, I strive to create meaningful solutions that make the world a little brighter. 
+                From innovative ideas to functional designs, 
+                this is where my journey in turning creativity into impactful software takes shape.</p>
+                <div class="social-icons">
+                    <a href="https://tn.linkedin.com/in/akram-jallab-959b40251"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/akram.jallab/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://x.com/AkramJallab"><i class='bx bxl-twitter'></i></a>
+                </div>
+                
+                <div class="btn-group">
+                     <a href="#" class="btn" data-i18n="hire">Hire</a>
+                     <a href="#contact" class="btn" data-i18n="contact_button">Contact</a> 
+                </div>                   
+            </div>        
+        <div class="home-img">
+             <img src="image.jpg" alt="">
+        </div>
+        
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading" data-i18n="education_heading">Education</h2>
+    
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-i18n="education_2021">2021-2023</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="education_2021">Integrated Preparatory Cycle</h3>
+                    <p data-i18n="education_2021_desc">Finished 2 years of pre-engineering preparatory cycle</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-i18n="education_2023">2023-2024</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="education_2023">Common Pre-Engineering Class</h3>
+                    <p data-i18n="education_2023_desc">Finished a foundational year where students prepare for specialization in fields like computer science or telecommunications sciences and technology</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date" data-i18n="education_2024">2024-2026</div>
+                <div class="timeline-content">
+                    <h3 data-i18n="education_2024">Software Engineering Major</h3>
+                    <p data-i18n="education_2024_desc">Currently in my 2nd year out of 3 as a software engineering major</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2 class="heading" data-i18n="skills_heading">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4 data-i18n="frontend">Front-End Development</h4>
+                    <p data-i18n="frontend_desc">Html5, CSS, JavaScript, React, Bootstrap</p>
+                </div>
+                <div class="skill-icons">
+                    <i class="bx bxl-html5"></i>
+                    <i class="bx bxl-css3"></i>
+                    <i class="bx bxl-javascript"></i>
+                    <i class="bx bxl-react"></i>
+                    <i class="bx bxl-bootstrap"></i>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4 data-i18n="backend">Back-End Development</h4>
+                    <p data-i18n="backend_desc">Python, Java, C#, SQL, Springboot</p>
+                </div>
+                <div class="skill-icons">
+                    <i class="bx bxl-python"></i>
+                    <i class="bx bxl-java"></i>
+                    <i class="bx bxl-c-plus-plus"></i>
+                    <i class="bx bxl-sql"></i>
+                    <i class="bx bxl-spring-boot"></i>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4 data-i18n="mobile">Mobile-App Development</h4>
+                    <p data-i18n="mobile_desc">Kotlin, Android, Flutter</p>
+                </div>
+                <div class="skill-icons">
+                    <i class="bx bxl-kotlin"></i>
+                    <i class="bx bxl-android"></i>
+                    <i class="bx bxl-flutter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading" data-i18n="contact_heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" data-i18n="fullname">
+                    <input type="email" placeholder="Email" data-i18n="email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" data-i18n="phone">
+                    <input type="text" placeholder="Subject" data-i18n="subject">   
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" data-i18n="message"></textarea>
+                <input type="submit" value="Send Message" class="btn" data-i18n="send_message">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="social">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#" data-i18n="footer_faq">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#" data-i18n="footer_skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#" data-i18n="footer_about">About Me</a>
+            </li>
+
+            <li>
+                <a href="#" data-i18n="footer_contact">Contact</a>
+            </li>
+
+        </ul>
+        <p class="copyright" data-i18n="footer_copyright">
+            © Akram Jallab | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
